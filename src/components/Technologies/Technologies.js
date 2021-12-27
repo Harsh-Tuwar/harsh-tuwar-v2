@@ -1,7 +1,10 @@
 import React from 'react';
-import { DiFirebase, DiReact, DiZend } from 'react-icons/di';
+import Image from 'next/image';
+import { BsCodeSlash } from 'react-icons/bs';
+import { SiMaterialdesign, SiServerless } from 'react-icons/si';
 import { Section, SectionDivider, SectionText, SectionTitle } from '../../styles/GlobalComponents';
-import { List, ListContainer, ListItem, ListParagraph, ListTitle } from './TechnologiesStyles';
+import { List, ListContainer, ListItem, ListTitle, TitleSpacer, TitleDiv, TechnologyItemsContainer } from './TechnologiesStyles';
+import { BackendTechnologies, FrontendTechnologies } from '../../constants/constants';
 
 const Technologies = () =>  (
   <Section id="tech">
@@ -9,43 +12,52 @@ const Technologies = () =>  (
     <SectionTitle>Technologies</SectionTitle>
     <SectionText>
       I've worked with a range a technologies in the web development world.
-      From Back-end To Design
     </SectionText>
     <List>
       <ListItem>
-        <picture>
-          <DiReact size="3rem" />
-        </picture>
-        <ListContainer>
-          <ListTitle>Front-End</ListTitle>
-          <ListParagraph>
-            Experiece with <br />
-            React.js
-          </ListParagraph>
-        </ListContainer>
+        <TitleDiv>
+          <picture>
+            <SiMaterialdesign size="30px" style={{ marginBottom: 10}}/>
+          </picture>
+          <TitleSpacer />
+          <ListContainer>
+            <ListTitle>Front-End</ListTitle>
+          </ListContainer>
+        </TitleDiv>
+        <TechnologyItemsContainer>
+          {FrontendTechnologies.map((item, index) => {
+            return <div style={{ margin: '0 10px', justifySelf: 'stretch' }} key={index}><Image layout="fixed" width='50px' height='50px' src={item.icon} alt={item.title} /></div>
+          })}
+        </TechnologyItemsContainer>
       </ListItem>
       <ListItem>
-        <picture>
-          <DiFirebase size="3rem" />
-        </picture>
-        <ListContainer>
-          <ListTitle>Back-End</ListTitle>
-          <ListParagraph>
-            Experience with <br />
-            Node and Databases
-          </ListParagraph>
-        </ListContainer>
+        <TitleDiv>
+          <picture>
+            <SiServerless size="30px" style={{ marginBottom: 10}} />
+          </picture>
+          <TitleSpacer />
+          <ListContainer>
+            <ListTitle>Back-End</ListTitle>
+          </ListContainer>
+        </TitleDiv>
+        <TechnologyItemsContainer>
+          {BackendTechnologies.map((item, index) => {
+            return <div style={{ margin: '0 10px', justifySelf: 'stretch' }} key={index}><Image layout="fixed" width='50px' height='50px' src={item.icon} alt={item.title} /></div>
+          })}
+        </TechnologyItemsContainer>
       </ListItem>
       <ListItem>
-        <picture>
-          <DiZend size="3rem" />
-        </picture>
+        <TitleDiv>
+          <picture>
+            <BsCodeSlash size="30px" style={{ marginBottom: 10}} />
+          </picture>
+          <TitleSpacer />
+          <ListContainer>
+            <ListTitle>Miscellaneous</ListTitle>
+          </ListContainer>
+        </TitleDiv>
         <ListContainer>
-          <ListTitle>UI/UX</ListTitle>
-          <ListParagraph>
-            Experience with <br />
-            tools like Figma
-          </ListParagraph>
+          test test
         </ListContainer>
       </ListItem>
     </List>

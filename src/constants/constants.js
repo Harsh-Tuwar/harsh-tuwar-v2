@@ -43,3 +43,23 @@ export const TimeLineData = [
   { year: 2019, text: 'Graduated from Seneca, started @ Reach Boarding as a Software Developer' },
   { year: 2021, text: 'Said goodbye to Reach, started @ Brane to become a Blockchain Developer', },
 ];
+
+
+export const FrontendTechnologies = [
+  { title: 'React', icon: 'https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/react/react.png' },
+  { title: 'TS', icon: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/128px-Typescript_logo_2020.svg.png' },
+  { title: 'JS', icon: 'https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png' },
+  { title: 'Bootstrap', icon: 'https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/bootstrap/bootstrap.png' },
+  { title: 'HTML', icon: 'https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/html/html.png' },
+  { title: 'CSS', icon: 'https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/css/css.png' },
+  { title: 'Jquery', icon: 'https://www.easyprogramming.net/logo/jquery.png' },
+  { title: 'materialUI', icon: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fopencollective-production.s3.us-west-1.amazonaws.com%2Fada636e0-395b-11ea-8ab7-b3f0317bbc7c.png&f=1&nofb=1' },
+  { title: 'Tailwind', icon: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fdemos.staticforms.co%2Fassets%2Fimages%2Flogos%2Ftailwind_transparent.png&f=1&nofb=1' },
+  { title: 'Sass', icon: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Sass_Logo_Color.svg/440px-Sass_Logo_Color.svg.png' },
+  { title: 'Redux', icon: 'https://raw.githubusercontent.com/reactjs/redux/master/logo/logo.png' },
+];
+
+export const BackendTechnologies = [
+  { title: 'NodeJS', icon: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/440px-Node.js_logo.svg.png' },
+  { title: 'python', icon: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/242px-Python-logo-notext.svg.png' },
+];
