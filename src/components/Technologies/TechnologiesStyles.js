@@ -128,3 +128,8 @@ export const TechnologyItemsContainer = styled.div`
   flex-wrap: wrap;
   margin: 15px;
 `
+
+export const TechnologyItemDiv = styled.div`
+  margin: 0 10px;
+  justiify-self: strech;
+`

@@ -4,7 +4,7 @@ import { BsCodeSlash } from 'react-icons/bs';
 import { SiMaterialdesign, SiServerless } from 'react-icons/si';
 import { MdDeveloperMode } from 'react-icons/md';
 import { Section, SectionDivider, SectionText, SectionTitle } from '../../styles/GlobalComponents';
-import { List, ListContainer, ListItem, ListTitle, TitleSpacer, TitleDiv, TechnologyItemsContainer } from './TechnologiesStyles';
+import { List, ListContainer, ListItem, ListTitle, TitleSpacer, TitleDiv, TechnologyItemsContainer, TechnologyItemDiv } from './TechnologiesStyles';
 import { BackendTechnologies, FrontendTechnologies, MobileTechnologies, MiscTechnologies } from '../../constants/constants';
 
 const Technologies = () =>  (
@@ -27,7 +27,7 @@ const Technologies = () =>  (
         </TitleDiv>
         <TechnologyItemsContainer>
           {FrontendTechnologies.map((item, index) => {
-            return <div style={{ margin: '0 10px', justifySelf: 'stretch' }} key={index}><Image layout="fixed" width='50px' height='50px' src={item.icon} alt={item.title} /></div>
+            return <TechnologyItemDiv key={index}><Image layout="fixed" width='50px' height='50px' src={item.icon} alt={item.title} /></TechnologyItemDiv>
           })}
         </TechnologyItemsContainer>
       </ListItem>
@@ -43,7 +43,7 @@ const Technologies = () =>  (
         </TitleDiv>
         <TechnologyItemsContainer>
           {BackendTechnologies.map((item, index) => {
-            return <div style={{ margin: '0 10px', justifySelf: 'stretch' }} key={index}><Image layout="fixed" width='50px' height='50px' src={item.icon} alt={item.title} /></div>
+            return <TechnologyItemDiv key={index}><Image layout="fixed" width='50px' height='50px' src={item.icon} alt={item.title} /></TechnologyItemDiv>
           })}
         </TechnologyItemsContainer>
       </ListItem>
@@ -59,7 +59,7 @@ const Technologies = () =>  (
         </TitleDiv>
         <TechnologyItemsContainer>
           {MobileTechnologies.map((item, index) => {
-            return <div style={{ margin: '0 10px', justifySelf: 'stretch' }} key={index}><Image layout="fixed" width='50px' height='50px' src={item.icon} alt={item.title} /></div>
+            return <TechnologyItemDiv key={index}><Image layout="fixed" width='50px' height='50px' src={item.icon} alt={item.title} /></TechnologyItemDiv>
           })}
         </TechnologyItemsContainer>
       </ListItem>
@@ -75,7 +75,7 @@ const Technologies = () =>  (
         </TitleDiv>
         <TechnologyItemsContainer>
           {MiscTechnologies.map((item, index) => {
-            return <div style={{ margin: '0 10px', justifySelf: 'stretch' }} key={index}><Image layout="fixed" width='50px' height='50px' src={item.icon} alt={item.title} /></div>
+            return <TechnologyItemDiv key={index}><Image layout="fixed" width='50px' height='50px' src={item.icon} alt={item.title} /></TechnologyItemDiv>
           })}
         </TechnologyItemsContainer>
       </ListItem>
